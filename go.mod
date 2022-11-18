@@ -91,7 +91,7 @@ require (
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/ecm v1.0.540
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/eiam v1.0.540
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/eis v1.0.540
-	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/emr v1.0.540
+	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/emr v1.1.0
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/es v1.0.540
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/ess v1.0.540
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/essbasic v1.0.540
