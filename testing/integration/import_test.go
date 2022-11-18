@@ -13,13 +13,11 @@
 // limitations under the License.
 
 package integration
-import (
-    "os"
-    "testing"
 
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/regions"
+import (
+	"os"
+	"testing"
+
 	aav20200224 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/aa/v20200224"
 	aaiv20180522 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/aai/v20180522"
 	acpv20220105 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/acp/v20220105"
@@ -84,6 +82,9 @@ import (
 	cmev20191029 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/cme/v20191029"
 	cmqv20190304 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/cmq/v20190304"
 	cmsv20190321 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/cms/v20190321"
+	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
+	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/regions"
 	cpdpv20190820 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/cpdp/v20190820"
 	crv20180321 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/cr/v20180321"
 	cvmv20170312 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/cvm/v20170312"
@@ -113,7 +114,7 @@ import (
 	eiamv20210420 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/eiam/v20210420"
 	eisv20200715 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/eis/v20200715"
 	eisv20210601 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/eis/v20210601"
-	emrv20190103 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/emr/v20190103"
+	emrv20190104 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/emr/v20190104"
 	esv20180416 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/es/v20180416"
 	essv20201111 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/ess/v20201111"
 	essbasicv20201222 "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/essbasic/v20201222"
@@ -270,3212 +271,3212 @@ import (
 )
 
 func TestAav20200224Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := aav20200224.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init aa_v20200224 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := aav20200224.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init aa_v20200224 client: %v", err)
+	}
 }
 
 func TestAaiv20180522Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := aaiv20180522.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init aai_v20180522 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := aaiv20180522.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init aai_v20180522 client: %v", err)
+	}
 }
 
 func TestAcpv20220105Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := acpv20220105.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init acp_v20220105 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := acpv20220105.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init acp_v20220105 client: %v", err)
+	}
 }
 
 func TestAdvisorv20200721Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := advisorv20200721.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init advisor_v20200721 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := advisorv20200721.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init advisor_v20200721 client: %v", err)
+	}
 }
 
 func TestAfv20200226Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := afv20200226.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init af_v20200226 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := afv20200226.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init af_v20200226 client: %v", err)
+	}
 }
 
 func TestAfcv20200226Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := afcv20200226.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init afc_v20200226 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := afcv20200226.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init afc_v20200226 client: %v", err)
+	}
 }
 
 func TestAmev20190916Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := amev20190916.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ame_v20190916 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := amev20190916.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ame_v20190916 client: %v", err)
+	}
 }
 
 func TestAmsv20200608Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := amsv20200608.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ams_v20200608 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := amsv20200608.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ams_v20200608 client: %v", err)
+	}
 }
 
 func TestAmsv20201229Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := amsv20201229.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ams_v20201229 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := amsv20201229.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ams_v20201229 client: %v", err)
+	}
 }
 
 func TestAntiddosv20200309Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := antiddosv20200309.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init antiddos_v20200309 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := antiddosv20200309.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init antiddos_v20200309 client: %v", err)
+	}
 }
 
 func TestApcasv20201127Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := apcasv20201127.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init apcas_v20201127 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := apcasv20201127.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init apcas_v20201127 client: %v", err)
+	}
 }
 
 func TestApev20200513Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := apev20200513.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ape_v20200513 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := apev20200513.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ape_v20200513 client: %v", err)
+	}
 }
 
 func TestApiv20201106Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := apiv20201106.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init api_v20201106 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := apiv20201106.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init api_v20201106 client: %v", err)
+	}
 }
 
 func TestApigatewayv20180808Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := apigatewayv20180808.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init apigateway_v20180808 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := apigatewayv20180808.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init apigateway_v20180808 client: %v", err)
+	}
 }
 
 func TestApmv20210622Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := apmv20210622.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init apm_v20210622 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := apmv20210622.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init apm_v20210622 client: %v", err)
+	}
 }
 
 func TestAsv20180419Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := asv20180419.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init as_v20180419 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := asv20180419.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init as_v20180419 client: %v", err)
+	}
 }
 
 func TestAsrv20190614Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := asrv20190614.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init asr_v20190614 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := asrv20190614.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init asr_v20190614 client: %v", err)
+	}
 }
 
 func TestAswv20200722Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := aswv20200722.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init asw_v20200722 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := aswv20200722.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init asw_v20200722 client: %v", err)
+	}
 }
 
 func TestBav20200720Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := bav20200720.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ba_v20200720 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := bav20200720.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ba_v20200720 client: %v", err)
+	}
 }
 
 func TestBatchv20170312Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := batchv20170312.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init batch_v20170312 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := batchv20170312.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init batch_v20170312 client: %v", err)
+	}
 }
 
 func TestBdav20200324Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := bdav20200324.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init bda_v20200324 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := bdav20200324.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init bda_v20200324 client: %v", err)
+	}
 }
 
 func TestBiv20220105Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := biv20220105.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init bi_v20220105 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := biv20220105.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init bi_v20220105 client: %v", err)
+	}
 }
 
 func TestBillingv20180709Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := billingv20180709.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init billing_v20180709 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := billingv20180709.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init billing_v20180709 client: %v", err)
+	}
 }
 
 func TestBizlivev20190313Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := bizlivev20190313.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init bizlive_v20190313 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := bizlivev20190313.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init bizlive_v20190313 client: %v", err)
+	}
 }
 
 func TestBmv20180423Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := bmv20180423.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init bm_v20180423 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := bmv20180423.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init bm_v20180423 client: %v", err)
+	}
 }
 
 func TestBmav20210624Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := bmav20210624.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init bma_v20210624 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := bmav20210624.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init bma_v20210624 client: %v", err)
+	}
 }
 
 func TestBmeipv20180625Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := bmeipv20180625.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init bmeip_v20180625 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := bmeipv20180625.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init bmeip_v20180625 client: %v", err)
+	}
 }
 
 func TestBmlbv20180625Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := bmlbv20180625.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init bmlb_v20180625 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := bmlbv20180625.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init bmlb_v20180625 client: %v", err)
+	}
 }
 
 func TestBmvpcv20180625Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := bmvpcv20180625.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init bmvpc_v20180625 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := bmvpcv20180625.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init bmvpc_v20180625 client: %v", err)
+	}
 }
 
 func TestBpaasv20181217Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := bpaasv20181217.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init bpaas_v20181217 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := bpaasv20181217.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init bpaas_v20181217 client: %v", err)
+	}
 }
 
 func TestBriv20190328Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := briv20190328.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init bri_v20190328 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := briv20190328.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init bri_v20190328 client: %v", err)
+	}
 }
 
 func TestBscav20210811Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := bscav20210811.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init bsca_v20210811 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := bscav20210811.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init bsca_v20210811 client: %v", err)
+	}
 }
 
 func TestBtoev20210303Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := btoev20210303.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init btoe_v20210303 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := btoev20210303.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init btoe_v20210303 client: %v", err)
+	}
 }
 
 func TestBtoev20210514Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := btoev20210514.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init btoe_v20210514 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := btoev20210514.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init btoe_v20210514 client: %v", err)
+	}
 }
 
 func TestCamv20190116Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := camv20190116.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cam_v20190116 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := camv20190116.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cam_v20190116 client: %v", err)
+	}
 }
 
 func TestCaptchav20190722Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := captchav20190722.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init captcha_v20190722 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := captchav20190722.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init captcha_v20190722 client: %v", err)
+	}
 }
 
 func TestCarv20220110Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := carv20220110.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init car_v20220110 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := carv20220110.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init car_v20220110 client: %v", err)
+	}
 }
 
 func TestCasbv20200507Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := casbv20200507.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init casb_v20200507 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := casbv20200507.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init casb_v20200507 client: %v", err)
+	}
 }
 
 func TestCatv20180409Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := catv20180409.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cat_v20180409 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := catv20180409.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cat_v20180409 client: %v", err)
+	}
 }
 
 func TestCbsv20170312Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cbsv20170312.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cbs_v20170312 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cbsv20170312.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cbs_v20170312 client: %v", err)
+	}
 }
 
 func TestCccv20200210Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cccv20200210.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ccc_v20200210 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cccv20200210.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ccc_v20200210 client: %v", err)
+	}
 }
 
 func TestCdbv20170320Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cdbv20170320.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cdb_v20170320 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cdbv20170320.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cdb_v20170320 client: %v", err)
+	}
 }
 
 func TestCdcv20201214Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cdcv20201214.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cdc_v20201214 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cdcv20201214.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cdc_v20201214 client: %v", err)
+	}
 }
 
 func TestCdnv20180606Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cdnv20180606.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cdn_v20180606 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cdnv20180606.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cdn_v20180606 client: %v", err)
+	}
 }
 
 func TestCdsv20180420Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cdsv20180420.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cds_v20180420 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cdsv20180420.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cds_v20180420 client: %v", err)
+	}
 }
 
 func TestCfgv20210820Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cfgv20210820.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cfg_v20210820 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cfgv20210820.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cfg_v20210820 client: %v", err)
+	}
 }
 
 func TestCfsv20190719Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cfsv20190719.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cfs_v20190719 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cfsv20190719.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cfs_v20190719 client: %v", err)
+	}
 }
 
 func TestCfwv20190904Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cfwv20190904.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cfw_v20190904 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cfwv20190904.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cfw_v20190904 client: %v", err)
+	}
 }
 
 func TestChdfsv20190718Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := chdfsv20190718.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init chdfs_v20190718 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := chdfsv20190718.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init chdfs_v20190718 client: %v", err)
+	}
 }
 
 func TestChdfsv20201112Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := chdfsv20201112.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init chdfs_v20201112 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := chdfsv20201112.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init chdfs_v20201112 client: %v", err)
+	}
 }
 
 func TestCiamv20220331Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ciamv20220331.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ciam_v20220331 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ciamv20220331.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ciam_v20220331 client: %v", err)
+	}
 }
 
 func TestCiiv20201210Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ciiv20201210.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cii_v20201210 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ciiv20201210.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cii_v20201210 client: %v", err)
+	}
 }
 
 func TestCiiv20210408Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ciiv20210408.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cii_v20210408 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ciiv20210408.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cii_v20210408 client: %v", err)
+	}
 }
 
 func TestCimv20190318Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cimv20190318.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cim_v20190318 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cimv20190318.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cim_v20190318 client: %v", err)
+	}
 }
 
 func TestCisv20180408Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cisv20180408.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cis_v20180408 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cisv20180408.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cis_v20180408 client: %v", err)
+	}
 }
 
 func TestCkafkav20190819Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ckafkav20190819.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ckafka_v20190819 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ckafkav20190819.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ckafka_v20190819 client: %v", err)
+	}
 }
 
 func TestClbv20180317Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := clbv20180317.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init clb_v20180317 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := clbv20180317.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init clb_v20180317 client: %v", err)
+	}
 }
 
 func TestCloudauditv20190319Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cloudauditv20190319.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cloudaudit_v20190319 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cloudauditv20190319.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cloudaudit_v20190319 client: %v", err)
+	}
 }
 
 func TestCloudhsmv20191112Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cloudhsmv20191112.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cloudhsm_v20191112 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cloudhsmv20191112.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cloudhsm_v20191112 client: %v", err)
+	}
 }
 
 func TestCloudstudiov20210524Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cloudstudiov20210524.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cloudstudio_v20210524 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cloudstudiov20210524.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cloudstudio_v20210524 client: %v", err)
+	}
 }
 
 func TestClsv20201016Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := clsv20201016.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cls_v20201016 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := clsv20201016.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cls_v20201016 client: %v", err)
+	}
 }
 
 func TestCmev20191029Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cmev20191029.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cme_v20191029 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cmev20191029.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cme_v20191029 client: %v", err)
+	}
 }
 
 func TestCmqv20190304Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cmqv20190304.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cmq_v20190304 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cmqv20190304.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cmq_v20190304 client: %v", err)
+	}
 }
 
 func TestCmsv20190321Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cmsv20190321.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cms_v20190321 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cmsv20190321.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cms_v20190321 client: %v", err)
+	}
 }
 
 func TestCpdpv20190820Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cpdpv20190820.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cpdp_v20190820 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cpdpv20190820.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cpdp_v20190820 client: %v", err)
+	}
 }
 
 func TestCrv20180321Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := crv20180321.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cr_v20180321 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := crv20180321.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cr_v20180321 client: %v", err)
+	}
 }
 
 func TestCvmv20170312Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cvmv20170312.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cvm_v20170312 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cvmv20170312.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cvm_v20170312 client: %v", err)
+	}
 }
 
 func TestCwpv20180228Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cwpv20180228.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cwp_v20180228 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cwpv20180228.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cwp_v20180228 client: %v", err)
+	}
 }
 
 func TestCwsv20180312Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cwsv20180312.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cws_v20180312 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cwsv20180312.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cws_v20180312 client: %v", err)
+	}
 }
 
 func TestCynosdbv20190107Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := cynosdbv20190107.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init cynosdb_v20190107 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := cynosdbv20190107.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init cynosdb_v20190107 client: %v", err)
+	}
 }
 
 func TestDasbv20191018Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dasbv20191018.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dasb_v20191018 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dasbv20191018.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dasb_v20191018 client: %v", err)
+	}
 }
 
 func TestDataintegrationv20220613Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dataintegrationv20220613.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dataintegration_v20220613 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dataintegrationv20220613.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dataintegration_v20220613 client: %v", err)
+	}
 }
 
 func TestDayuv20180709Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dayuv20180709.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dayu_v20180709 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dayuv20180709.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dayu_v20180709 client: %v", err)
+	}
 }
 
 func TestDbbrainv20191016Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dbbrainv20191016.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dbbrain_v20191016 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dbbrainv20191016.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dbbrain_v20191016 client: %v", err)
+	}
 }
 
 func TestDbbrainv20210527Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dbbrainv20210527.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dbbrain_v20210527 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dbbrainv20210527.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dbbrain_v20210527 client: %v", err)
+	}
 }
 
 func TestDbdcv20201029Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dbdcv20201029.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dbdc_v20201029 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dbdcv20201029.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dbdc_v20201029 client: %v", err)
+	}
 }
 
 func TestDcv20180410Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dcv20180410.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dc_v20180410 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dcv20180410.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dc_v20180410 client: %v", err)
+	}
 }
 
 func TestDcdbv20180411Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dcdbv20180411.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dcdb_v20180411 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dcdbv20180411.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dcdb_v20180411 client: %v", err)
+	}
 }
 
 func TestDlcv20210125Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dlcv20210125.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dlc_v20210125 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dlcv20210125.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dlc_v20210125 client: %v", err)
+	}
 }
 
 func TestDnspodv20210323Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dnspodv20210323.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dnspod_v20210323 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dnspodv20210323.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dnspod_v20210323 client: %v", err)
+	}
 }
 
 func TestDomainv20180808Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := domainv20180808.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init domain_v20180808 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := domainv20180808.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init domain_v20180808 client: %v", err)
+	}
 }
 
 func TestDrmv20181115Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := drmv20181115.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init drm_v20181115 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := drmv20181115.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init drm_v20181115 client: %v", err)
+	}
 }
 
 func TestDsv20180523Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dsv20180523.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ds_v20180523 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dsv20180523.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ds_v20180523 client: %v", err)
+	}
 }
 
 func TestDtfv20200506Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dtfv20200506.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dtf_v20200506 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dtfv20200506.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dtf_v20200506 client: %v", err)
+	}
 }
 
 func TestDtsv20180330Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dtsv20180330.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dts_v20180330 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dtsv20180330.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dts_v20180330 client: %v", err)
+	}
 }
 
 func TestDtsv20211206Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := dtsv20211206.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init dts_v20211206 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := dtsv20211206.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init dts_v20211206 client: %v", err)
+	}
 }
 
 func TestEbv20210416Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ebv20210416.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init eb_v20210416 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ebv20210416.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init eb_v20210416 client: %v", err)
+	}
 }
 
 func TestEccv20181213Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := eccv20181213.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ecc_v20181213 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := eccv20181213.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ecc_v20181213 client: %v", err)
+	}
 }
 
 func TestEcdnv20191012Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ecdnv20191012.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ecdn_v20191012 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ecdnv20191012.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ecdn_v20191012 client: %v", err)
+	}
 }
 
 func TestEcmv20190719Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ecmv20190719.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ecm_v20190719 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ecmv20190719.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ecm_v20190719 client: %v", err)
+	}
 }
 
 func TestEiamv20210420Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := eiamv20210420.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init eiam_v20210420 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := eiamv20210420.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init eiam_v20210420 client: %v", err)
+	}
 }
 
 func TestEisv20200715Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := eisv20200715.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init eis_v20200715 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := eisv20200715.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init eis_v20200715 client: %v", err)
+	}
 }
 
 func TestEisv20210601Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := eisv20210601.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init eis_v20210601 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := eisv20210601.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init eis_v20210601 client: %v", err)
+	}
 }
 
 func TestEmrv20190103Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := emrv20190103.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init emr_v20190103 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := emrv20190103.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init emr_v20190103 client: %v", err)
+	}
 }
 
 func TestEsv20180416Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := esv20180416.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init es_v20180416 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := esv20180416.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init es_v20180416 client: %v", err)
+	}
 }
 
 func TestEssv20201111Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := essv20201111.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ess_v20201111 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := essv20201111.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ess_v20201111 client: %v", err)
+	}
 }
 
 func TestEssbasicv20201222Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := essbasicv20201222.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init essbasic_v20201222 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := essbasicv20201222.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init essbasic_v20201222 client: %v", err)
+	}
 }
 
 func TestEssbasicv20210526Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := essbasicv20210526.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init essbasic_v20210526 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := essbasicv20210526.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init essbasic_v20210526 client: %v", err)
+	}
 }
 
 func TestFacefusionv20181201Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := facefusionv20181201.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init facefusion_v20181201 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := facefusionv20181201.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init facefusion_v20181201 client: %v", err)
+	}
 }
 
 func TestFaceidv20180301Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := faceidv20180301.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init faceid_v20180301 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := faceidv20180301.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init faceid_v20180301 client: %v", err)
+	}
 }
 
 func TestFmuv20191213Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := fmuv20191213.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init fmu_v20191213 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := fmuv20191213.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init fmu_v20191213 client: %v", err)
+	}
 }
 
 func TestFtv20200304Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ftv20200304.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ft_v20200304 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ftv20200304.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ft_v20200304 client: %v", err)
+	}
 }
 
 func TestGaapv20180529Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := gaapv20180529.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init gaap_v20180529 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := gaapv20180529.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init gaap_v20180529 client: %v", err)
+	}
 }
 
 func TestGmev20180711Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := gmev20180711.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init gme_v20180711 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := gmev20180711.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init gme_v20180711 client: %v", err)
+	}
 }
 
 func TestGpmv20200820Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := gpmv20200820.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init gpm_v20200820 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := gpmv20200820.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init gpm_v20200820 client: %v", err)
+	}
 }
 
 func TestGsv20191118Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := gsv20191118.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init gs_v20191118 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := gsv20191118.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init gs_v20191118 client: %v", err)
+	}
 }
 
 func TestGsev20191112Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := gsev20191112.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init gse_v20191112 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := gsev20191112.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init gse_v20191112 client: %v", err)
+	}
 }
 
 func TestHabov20181203Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := habov20181203.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init habo_v20181203 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := habov20181203.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init habo_v20181203 client: %v", err)
+	}
 }
 
 func TestHcmv20181106Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := hcmv20181106.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init hcm_v20181106 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := hcmv20181106.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init hcm_v20181106 client: %v", err)
+	}
 }
 
 func TestIaiv20180301Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iaiv20180301.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iai_v20180301 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iaiv20180301.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iai_v20180301 client: %v", err)
+	}
 }
 
 func TestIaiv20200303Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iaiv20200303.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iai_v20200303 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iaiv20200303.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iai_v20200303 client: %v", err)
+	}
 }
 
 func TestIcv20190307Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := icv20190307.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ic_v20190307 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := icv20190307.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ic_v20190307 client: %v", err)
+	}
 }
 
 func TestIcrv20211014Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := icrv20211014.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init icr_v20211014 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := icrv20211014.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init icr_v20211014 client: %v", err)
+	}
 }
 
 func TestIev20200304Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iev20200304.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ie_v20200304 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iev20200304.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ie_v20200304 client: %v", err)
+	}
 }
 
 func TestIecpv20210914Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iecpv20210914.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iecp_v20210914 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iecpv20210914.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iecp_v20210914 client: %v", err)
+	}
 }
 
 func TestIirv20200417Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iirv20200417.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iir_v20200417 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iirv20200417.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iir_v20200417 client: %v", err)
+	}
 }
 
 func TestImsv20200713Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := imsv20200713.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ims_v20200713 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := imsv20200713.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ims_v20200713 client: %v", err)
+	}
 }
 
 func TestImsv20201229Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := imsv20201229.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ims_v20201229 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := imsv20201229.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ims_v20201229 client: %v", err)
+	}
 }
 
 func TestIotv20180123Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iotv20180123.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iot_v20180123 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iotv20180123.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iot_v20180123 client: %v", err)
+	}
 }
 
 func TestIotcloudv20180614Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iotcloudv20180614.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iotcloud_v20180614 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iotcloudv20180614.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iotcloud_v20180614 client: %v", err)
+	}
 }
 
 func TestIotcloudv20210408Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iotcloudv20210408.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iotcloud_v20210408 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iotcloudv20210408.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iotcloud_v20210408 client: %v", err)
+	}
 }
 
 func TestIotexplorerv20190423Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iotexplorerv20190423.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iotexplorer_v20190423 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iotexplorerv20190423.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iotexplorer_v20190423 client: %v", err)
+	}
 }
 
 func TestIottidv20190411Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iottidv20190411.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iottid_v20190411 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iottidv20190411.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iottid_v20190411 client: %v", err)
+	}
 }
 
 func TestIotvideov20191126Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iotvideov20191126.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iotvideo_v20191126 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iotvideov20191126.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iotvideo_v20191126 client: %v", err)
+	}
 }
 
 func TestIotvideov20201215Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iotvideov20201215.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iotvideo_v20201215 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iotvideov20201215.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iotvideo_v20201215 client: %v", err)
+	}
 }
 
 func TestIotvideov20211125Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iotvideov20211125.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iotvideo_v20211125 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iotvideov20211125.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iotvideo_v20211125 client: %v", err)
+	}
 }
 
 func TestIotvideoindustryv20201201Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := iotvideoindustryv20201201.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init iotvideoindustry_v20201201 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := iotvideoindustryv20201201.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init iotvideoindustry_v20201201 client: %v", err)
+	}
 }
 
 func TestIrpv20220324Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := irpv20220324.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init irp_v20220324 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := irpv20220324.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init irp_v20220324 client: %v", err)
+	}
 }
 
 func TestIrpv20220805Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := irpv20220805.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init irp_v20220805 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := irpv20220805.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init irp_v20220805 client: %v", err)
+	}
 }
 
 func TestIvldv20210903Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ivldv20210903.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ivld_v20210903 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ivldv20210903.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ivld_v20210903 client: %v", err)
+	}
 }
 
 func TestKmsv20190118Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := kmsv20190118.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init kms_v20190118 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := kmsv20190118.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init kms_v20190118 client: %v", err)
+	}
 }
 
 func TestLcicv20220817Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := lcicv20220817.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init lcic_v20220817 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := lcicv20220817.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init lcic_v20220817 client: %v", err)
+	}
 }
 
 func TestLighthousev20200324Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := lighthousev20200324.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init lighthouse_v20200324 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := lighthousev20200324.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init lighthouse_v20200324 client: %v", err)
+	}
 }
 
 func TestLivev20180801Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := livev20180801.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init live_v20180801 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := livev20180801.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init live_v20180801 client: %v", err)
+	}
 }
 
 func TestLowcodev20210108Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := lowcodev20210108.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init lowcode_v20210108 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := lowcodev20210108.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init lowcode_v20210108 client: %v", err)
+	}
 }
 
 func TestLpv20200224Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := lpv20200224.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init lp_v20200224 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := lpv20200224.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init lp_v20200224 client: %v", err)
+	}
 }
 
 func TestMariadbv20170312Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := mariadbv20170312.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init mariadb_v20170312 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := mariadbv20170312.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init mariadb_v20170312 client: %v", err)
+	}
 }
 
 func TestMarketv20191010Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := marketv20191010.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init market_v20191010 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := marketv20191010.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init market_v20191010 client: %v", err)
+	}
 }
 
 func TestMemcachedv20190318Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := memcachedv20190318.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init memcached_v20190318 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := memcachedv20190318.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init memcached_v20190318 client: %v", err)
+	}
 }
 
 func TestMgobev20190929Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := mgobev20190929.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init mgobe_v20190929 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := mgobev20190929.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init mgobe_v20190929 client: %v", err)
+	}
 }
 
 func TestMgobev20201014Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := mgobev20201014.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init mgobe_v20201014 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := mgobev20201014.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init mgobe_v20201014 client: %v", err)
+	}
 }
 
 func TestMmpsv20200710Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := mmpsv20200710.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init mmps_v20200710 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := mmpsv20200710.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init mmps_v20200710 client: %v", err)
+	}
 }
 
 func TestMnav20210119Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := mnav20210119.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init mna_v20210119 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := mnav20210119.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init mna_v20210119 client: %v", err)
+	}
 }
 
 func TestMongodbv20180408Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := mongodbv20180408.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init mongodb_v20180408 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := mongodbv20180408.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init mongodb_v20180408 client: %v", err)
+	}
 }
 
 func TestMongodbv20190725Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := mongodbv20190725.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init mongodb_v20190725 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := mongodbv20190725.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init mongodb_v20190725 client: %v", err)
+	}
 }
 
 func TestMonitorv20180724Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := monitorv20180724.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init monitor_v20180724 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := monitorv20180724.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init monitor_v20180724 client: %v", err)
+	}
 }
 
 func TestMpsv20190612Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := mpsv20190612.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init mps_v20190612 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := mpsv20190612.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init mps_v20190612 client: %v", err)
+	}
 }
 
 func TestMrsv20200910Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := mrsv20200910.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init mrs_v20200910 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := mrsv20200910.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init mrs_v20200910 client: %v", err)
+	}
 }
 
 func TestMsv20180408Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := msv20180408.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ms_v20180408 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := msv20180408.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ms_v20180408 client: %v", err)
+	}
 }
 
 func TestMspv20180319Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := mspv20180319.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init msp_v20180319 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := mspv20180319.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init msp_v20180319 client: %v", err)
+	}
 }
 
 func TestMvjv20190926Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := mvjv20190926.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init mvj_v20190926 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := mvjv20190926.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init mvj_v20190926 client: %v", err)
+	}
 }
 
 func TestNlpv20190408Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := nlpv20190408.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init nlp_v20190408 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := nlpv20190408.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init nlp_v20190408 client: %v", err)
+	}
 }
 
 func TestNppv20190823Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := nppv20190823.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init npp_v20190823 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := nppv20190823.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init npp_v20190823 client: %v", err)
+	}
 }
 
 func TestOceanusv20190422Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := oceanusv20190422.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init oceanus_v20190422 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := oceanusv20190422.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init oceanus_v20190422 client: %v", err)
+	}
 }
 
 func TestOcrv20181119Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ocrv20181119.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ocr_v20181119 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ocrv20181119.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ocr_v20181119 client: %v", err)
+	}
 }
 
 func TestOrganizationv20181225Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := organizationv20181225.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init organization_v20181225 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := organizationv20181225.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init organization_v20181225 client: %v", err)
+	}
 }
 
 func TestOrganizationv20210331Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := organizationv20210331.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init organization_v20210331 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := organizationv20210331.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init organization_v20210331 client: %v", err)
+	}
 }
 
 func TestPartnersv20180321Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := partnersv20180321.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init partners_v20180321 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := partnersv20180321.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init partners_v20180321 client: %v", err)
+	}
 }
 
 func TestPdsv20210701Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := pdsv20210701.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init pds_v20210701 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := pdsv20210701.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init pds_v20210701 client: %v", err)
+	}
 }
 
 func TestPostgresv20170312Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := postgresv20170312.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init postgres_v20170312 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := postgresv20170312.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init postgres_v20170312 client: %v", err)
+	}
 }
 
 func TestPrivatednsv20201028Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := privatednsv20201028.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init privatedns_v20201028 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := privatednsv20201028.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init privatedns_v20201028 client: %v", err)
+	}
 }
 
 func TestPtsv20210728Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ptsv20210728.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init pts_v20210728 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ptsv20210728.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init pts_v20210728 client: %v", err)
+	}
 }
 
 func TestRcev20201103Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := rcev20201103.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init rce_v20201103 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := rcev20201103.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init rce_v20201103 client: %v", err)
+	}
 }
 
 func TestRedisv20180412Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := redisv20180412.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init redis_v20180412 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := redisv20180412.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init redis_v20180412 client: %v", err)
+	}
 }
 
 func TestRegionv20220627Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := regionv20220627.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init region_v20220627 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := regionv20220627.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init region_v20220627 client: %v", err)
+	}
 }
 
 func TestRkpv20191209Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := rkpv20191209.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init rkp_v20191209 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := rkpv20191209.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init rkp_v20191209 client: %v", err)
+	}
 }
 
 func TestRpv20200224Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := rpv20200224.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init rp_v20200224 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := rpv20200224.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init rp_v20200224 client: %v", err)
+	}
 }
 
 func TestRumv20210622Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := rumv20210622.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init rum_v20210622 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := rumv20210622.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init rum_v20210622 client: %v", err)
+	}
 }
 
 func TestScfv20180416Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := scfv20180416.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init scf_v20180416 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := scfv20180416.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init scf_v20180416 client: %v", err)
+	}
 }
 
 func TestSesv20201002Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := sesv20201002.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ses_v20201002 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := sesv20201002.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ses_v20201002 client: %v", err)
+	}
 }
 
 func TestSmhv20210712Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := smhv20210712.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init smh_v20210712 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := smhv20210712.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init smh_v20210712 client: %v", err)
+	}
 }
 
 func TestSmpnv20190822Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := smpnv20190822.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init smpn_v20190822 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := smpnv20190822.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init smpn_v20190822 client: %v", err)
+	}
 }
 
 func TestSmsv20190711Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := smsv20190711.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init sms_v20190711 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := smsv20190711.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init sms_v20190711 client: %v", err)
+	}
 }
 
 func TestSmsv20210111Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := smsv20210111.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init sms_v20210111 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := smsv20210111.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init sms_v20210111 client: %v", err)
+	}
 }
 
 func TestSoev20180724Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := soev20180724.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init soe_v20180724 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := soev20180724.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init soe_v20180724 client: %v", err)
+	}
 }
 
 func TestSolarv20181011Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := solarv20181011.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init solar_v20181011 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := solarv20181011.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init solar_v20181011 client: %v", err)
+	}
 }
 
 func TestSqlserverv20180328Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := sqlserverv20180328.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init sqlserver_v20180328 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := sqlserverv20180328.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init sqlserver_v20180328 client: %v", err)
+	}
 }
 
 func TestSsav20180608Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ssav20180608.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ssa_v20180608 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ssav20180608.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ssa_v20180608 client: %v", err)
+	}
 }
 
 func TestSslv20191205Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := sslv20191205.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ssl_v20191205 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := sslv20191205.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ssl_v20191205 client: %v", err)
+	}
 }
 
 func TestSslpodv20190605Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := sslpodv20190605.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init sslpod_v20190605 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := sslpodv20190605.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init sslpod_v20190605 client: %v", err)
+	}
 }
 
 func TestSsmv20190923Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ssmv20190923.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ssm_v20190923 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ssmv20190923.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ssm_v20190923 client: %v", err)
+	}
 }
 
 func TestStsv20180813Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := stsv20180813.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init sts_v20180813 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := stsv20180813.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init sts_v20180813 client: %v", err)
+	}
 }
 
 func TestTafv20200210Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tafv20200210.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init taf_v20200210 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tafv20200210.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init taf_v20200210 client: %v", err)
+	}
 }
 
 func TestTagv20180813Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tagv20180813.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tag_v20180813 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tagv20180813.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tag_v20180813 client: %v", err)
+	}
 }
 
 func TestTanv20220420Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tanv20220420.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tan_v20220420 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tanv20220420.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tan_v20220420 client: %v", err)
+	}
 }
 
 func TestTatv20201028Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tatv20201028.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tat_v20201028 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tatv20201028.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tat_v20201028 client: %v", err)
+	}
 }
 
 func TestTavv20190118Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tavv20190118.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tav_v20190118 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tavv20190118.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tav_v20190118 client: %v", err)
+	}
 }
 
 func TestTbaasv20180416Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tbaasv20180416.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tbaas_v20180416 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tbaasv20180416.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tbaas_v20180416 client: %v", err)
+	}
 }
 
 func TestTbmv20180129Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tbmv20180129.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tbm_v20180129 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tbmv20180129.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tbm_v20180129 client: %v", err)
+	}
 }
 
 func TestTbpv20190311Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tbpv20190311.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tbp_v20190311 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tbpv20190311.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tbp_v20190311 client: %v", err)
+	}
 }
 
 func TestTbpv20190627Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tbpv20190627.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tbp_v20190627 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tbpv20190627.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tbp_v20190627 client: %v", err)
+	}
 }
 
 func TestTcaplusdbv20190823Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tcaplusdbv20190823.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tcaplusdb_v20190823 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tcaplusdbv20190823.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tcaplusdb_v20190823 client: %v", err)
+	}
 }
 
 func TestTcbv20180608Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tcbv20180608.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tcb_v20180608 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tcbv20180608.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tcb_v20180608 client: %v", err)
+	}
 }
 
 func TestTcbrv20220217Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tcbrv20220217.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tcbr_v20220217 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tcbrv20220217.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tcbr_v20220217 client: %v", err)
+	}
 }
 
 func TestTcexv20200727Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tcexv20200727.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tcex_v20200727 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tcexv20200727.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tcex_v20200727 client: %v", err)
+	}
 }
 
 func TestTciv20190318Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tciv20190318.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tci_v20190318 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tciv20190318.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tci_v20190318 client: %v", err)
+	}
 }
 
 func TestTcmv20210413Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tcmv20210413.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tcm_v20210413 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tcmv20210413.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tcm_v20210413 client: %v", err)
+	}
 }
 
 func TestTcrv20190924Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tcrv20190924.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tcr_v20190924 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tcrv20190924.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tcr_v20190924 client: %v", err)
+	}
 }
 
 func TestTcssv20201101Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tcssv20201101.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tcss_v20201101 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tcssv20201101.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tcss_v20201101 client: %v", err)
+	}
 }
 
 func TestTdcpgv20211118Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tdcpgv20211118.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tdcpg_v20211118 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tdcpgv20211118.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tdcpg_v20211118 client: %v", err)
+	}
 }
 
 func TestTdidv20210519Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tdidv20210519.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tdid_v20210519 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tdidv20210519.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tdid_v20210519 client: %v", err)
+	}
 }
 
 func TestTdmqv20200217Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tdmqv20200217.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tdmq_v20200217 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tdmqv20200217.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tdmq_v20200217 client: %v", err)
+	}
 }
 
 func TestTdsv20220801Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tdsv20220801.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tds_v20220801 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tdsv20220801.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tds_v20220801 client: %v", err)
+	}
 }
 
 func TestTemv20201221Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := temv20201221.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tem_v20201221 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := temv20201221.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tem_v20201221 client: %v", err)
+	}
 }
 
 func TestTemv20210701Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := temv20210701.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tem_v20210701 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := temv20210701.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tem_v20210701 client: %v", err)
+	}
 }
 
 func TestTeov20220106Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := teov20220106.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init teo_v20220106 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := teov20220106.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init teo_v20220106 client: %v", err)
+	}
 }
 
 func TestTeov20220901Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := teov20220901.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init teo_v20220901 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := teov20220901.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init teo_v20220901 client: %v", err)
+	}
 }
 
 func TestThpcv20211109Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := thpcv20211109.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init thpc_v20211109 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := thpcv20211109.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init thpc_v20211109 client: %v", err)
+	}
 }
 
 func TestThpcv20220401Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := thpcv20220401.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init thpc_v20220401 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := thpcv20220401.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init thpc_v20220401 client: %v", err)
+	}
 }
 
 func TestTiav20180226Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tiav20180226.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tia_v20180226 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tiav20180226.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tia_v20180226 client: %v", err)
+	}
 }
 
 func TestTicv20201117Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ticv20201117.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tic_v20201117 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ticv20201117.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tic_v20201117 client: %v", err)
+	}
 }
 
 func TestTicmv20181127Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ticmv20181127.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ticm_v20181127 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ticmv20181127.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ticm_v20181127 client: %v", err)
+	}
 }
 
 func TestTicsv20181115Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ticsv20181115.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tics_v20181115 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ticsv20181115.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tics_v20181115 client: %v", err)
+	}
 }
 
 func TestTiemsv20190416Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tiemsv20190416.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tiems_v20190416 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tiemsv20190416.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tiems_v20190416 client: %v", err)
+	}
 }
 
 func TestTiiav20190529Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tiiav20190529.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tiia_v20190529 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tiiav20190529.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tiia_v20190529 client: %v", err)
+	}
 }
 
 func TestTionev20191022Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tionev20191022.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tione_v20191022 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tionev20191022.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tione_v20191022 client: %v", err)
+	}
 }
 
 func TestTionev20211111Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tionev20211111.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tione_v20211111 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tionev20211111.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tione_v20211111 client: %v", err)
+	}
 }
 
 func TestTiwv20190919Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tiwv20190919.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tiw_v20190919 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tiwv20190919.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tiw_v20190919 client: %v", err)
+	}
 }
 
 func TestTkev20180525Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tkev20180525.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tke_v20180525 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tkev20180525.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tke_v20180525 client: %v", err)
+	}
 }
 
 func TestTkgdqv20190411Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tkgdqv20190411.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tkgdq_v20190411 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tkgdqv20190411.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tkgdq_v20190411 client: %v", err)
+	}
 }
 
 func TestTmsv20200713Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tmsv20200713.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tms_v20200713 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tmsv20200713.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tms_v20200713 client: %v", err)
+	}
 }
 
 func TestTmsv20201229Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tmsv20201229.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tms_v20201229 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tmsv20201229.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tms_v20201229 client: %v", err)
+	}
 }
 
 func TestTmtv20180321Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tmtv20180321.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tmt_v20180321 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tmtv20180321.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tmt_v20180321 client: %v", err)
+	}
 }
 
 func TestTrpv20210515Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := trpv20210515.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init trp_v20210515 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := trpv20210515.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init trp_v20210515 client: %v", err)
+	}
 }
 
 func TestTrtcv20190722Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := trtcv20190722.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init trtc_v20190722 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := trtcv20190722.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init trtc_v20190722 client: %v", err)
+	}
 }
 
 func TestTsev20201207Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tsev20201207.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tse_v20201207 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tsev20201207.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tse_v20201207 client: %v", err)
+	}
 }
 
 func TestTsfv20180326Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tsfv20180326.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tsf_v20180326 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tsfv20180326.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tsf_v20180326 client: %v", err)
+	}
 }
 
 func TestTswv20200924Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tswv20200924.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tsw_v20200924 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tswv20200924.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tsw_v20200924 client: %v", err)
+	}
 }
 
 func TestTswv20210412Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := tswv20210412.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tsw_v20210412 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := tswv20210412.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tsw_v20210412 client: %v", err)
+	}
 }
 
 func TestTtsv20190823Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := ttsv20190823.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init tts_v20190823 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := ttsv20190823.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init tts_v20190823 client: %v", err)
+	}
 }
 
 func TestUmpv20200918Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := umpv20200918.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init ump_v20200918 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := umpv20200918.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init ump_v20200918 client: %v", err)
+	}
 }
 
 func TestVmv20200709Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := vmv20200709.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init vm_v20200709 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := vmv20200709.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init vm_v20200709 client: %v", err)
+	}
 }
 
 func TestVmv20201229Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := vmv20201229.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init vm_v20201229 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := vmv20201229.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init vm_v20201229 client: %v", err)
+	}
 }
 
 func TestVmv20210922Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := vmv20210922.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init vm_v20210922 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := vmv20210922.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init vm_v20210922 client: %v", err)
+	}
 }
 
 func TestVmsv20200902Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := vmsv20200902.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init vms_v20200902 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := vmsv20200902.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init vms_v20200902 client: %v", err)
+	}
 }
 
 func TestVodv20180717Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := vodv20180717.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init vod_v20180717 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := vodv20180717.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init vod_v20180717 client: %v", err)
+	}
 }
 
 func TestVpcv20170312Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := vpcv20170312.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init vpc_v20170312 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := vpcv20170312.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init vpc_v20170312 client: %v", err)
+	}
 }
 
 func TestWafv20180125Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := wafv20180125.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init waf_v20180125 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := wafv20180125.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init waf_v20180125 client: %v", err)
+	}
 }
 
 func TestWavv20210129Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := wavv20210129.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init wav_v20210129 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := wavv20210129.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init wav_v20210129 client: %v", err)
+	}
 }
 
 func TestWedatav20210820Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := wedatav20210820.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init wedata_v20210820 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := wedatav20210820.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init wedata_v20210820 client: %v", err)
+	}
 }
 
 func TestWssv20180426Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := wssv20180426.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init wss_v20180426 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := wssv20180426.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init wss_v20180426 client: %v", err)
+	}
 }
 
 func TestYinsudav20220527Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := yinsudav20220527.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init yinsuda_v20220527 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := yinsudav20220527.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init yinsuda_v20220527 client: %v", err)
+	}
 }
 
 func TestYoumallv20180228Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := youmallv20180228.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init youmall_v20180228 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := youmallv20180228.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init youmall_v20180228 client: %v", err)
+	}
 }
 
 func TestYunjingv20180228Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := yunjingv20180228.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init yunjing_v20180228 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := yunjingv20180228.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init yunjing_v20180228 client: %v", err)
+	}
 }
 
 func TestYunsouv20180504Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := yunsouv20180504.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init yunsou_v20180504 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := yunsouv20180504.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init yunsou_v20180504 client: %v", err)
+	}
 }
 
 func TestYunsouv20191115Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := yunsouv20191115.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init yunsou_v20191115 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := yunsouv20191115.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init yunsou_v20191115 client: %v", err)
+	}
 }
 
 func TestZjv20190121Import(t *testing.T) {
-    credential := common.NewCredential(
-        os.Getenv("TENCENTCLOUD_SECRET_ID"),
-        os.Getenv("TENCENTCLOUD_SECRET_KEY"))
-    client, err := zjv20190121.NewClient(
-        credential,
-        regions.Guangzhou,
-        profile.NewClientProfile())
-    if err != nil || client == nil {
-        t.Errorf("fail to init zj_v20190121 client: %v", err)
-    }
+	credential := common.NewCredential(
+		os.Getenv("TENCENTCLOUD_SECRET_ID"),
+		os.Getenv("TENCENTCLOUD_SECRET_KEY"))
+	client, err := zjv20190121.NewClient(
+		credential,
+		regions.Guangzhou,
+		profile.NewClientProfile())
+	if err != nil || client == nil {
+		t.Errorf("fail to init zj_v20190121 client: %v", err)
+	}
 }
