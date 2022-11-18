@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package v20190103
+package v20190104
 
 const (
 	// 此产品的特有错误码
