@@ -4479,3 +4479,21 @@ type VPCSettings struct {
 	// Subnet ID
 	SubnetId *string `json:"SubnetId,omitempty" name:"SubnetId"`
 }
+
+type UpdateWebproxyPasswordRequest struct {
+	*tchttp.BaseRequest
+
+	// emr集群id
+	InstanceId *string `json:"InstanceId,omitempty" name:"InstanceId"`
+	// 取值范围：
+	// <li>fair:代表公平调度标识</li>
+	// <li>capacity:代表容量调度标识</li>
+	OldPassword *string `json:"OldPassword,omitempty" name:"OldPassword"`
+	NewPassword *string `json:"NewPassword,omitempty" name:"NewPassword"`
+}
+
+
+type UpdateWebproxyPasswordResponse struct {
+	*tchttp.BaseResponse
+	Response *DescribeInstancesListResponseParams `json:"Response"`
+}

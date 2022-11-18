@@ -2268,3 +2268,39 @@ func (c *Client) TerminateTasksWithContext(ctx context.Context, request *Termina
     err = c.Send(request, response)
     return
 }
+
+func NewUpdateWebproxyPasswordRequest() (request *UpdateWebproxyPasswordRequest) {
+	request = &UpdateWebproxyPasswordRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+
+	request.Init().WithApiInfo("emr", APIVersion, "UpdateWebproxyPassword")
+
+	return
+}
+
+func NewUpdateWebproxyPasswordResponse() (response *UpdateWebproxyPasswordResponse) {
+	response = &UpdateWebproxyPasswordResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
+}
+func (c *Client) UpdateWebproxyPassword(request *UpdateWebproxyPasswordRequest) (response *UpdateWebproxyPasswordResponse, err error) {
+	return c.UpdateWebproxyPasswordWithContext(context.Background(), request)
+}
+
+func (c *Client) UpdateWebproxyPasswordWithContext(ctx context.Context, request *UpdateWebproxyPasswordRequest) (response *UpdateWebproxyPasswordResponse, err error) {
+	if request == nil {
+		request = NewUpdateWebproxyPasswordRequest()
+	}
+
+	if c.GetCredential() == nil {
+		return nil, errors.New("UpdateWebproxyPassword require credential")
+	}
+
+	request.SetContext(ctx)
+
+	response = NewUpdateWebproxyPasswordResponse()
+	err = c.Send(request, response)
+	return
+}
